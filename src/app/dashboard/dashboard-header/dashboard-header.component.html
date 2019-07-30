@@ -1,0 +1,21 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="image-cisco" src="/assets/02_user_dashboard/u68.jpg">
+        <div class="static">Kinetic Dashboard</div>
+        <button class="btn btn-lg btn btn-primary add-dashboard" (click)="open(content)">
+            <img class="image-add" src="/assets/02_user_dashboard/u71.png"> Add Dashboard</button>
+    </nav>
+    <div class="row">
+        <ng-template #content let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">Create Dashboard</h4>
+                <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <app-dashboard-pop></app-dashboard-pop>
+        </ng-template>
+
+
+    </div>
+</div>
